@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 
+#This is to instanciate the app
 app = Flask(__name__)
 
 # Simulated data
@@ -19,6 +20,7 @@ events = [
 
 # TODO: Task 1 - Define the Problem
 # Create a new event from JSON input
+# Defines the end points
 @app.route("/events", methods=["POST"])
 def create_event():
     # TODO: Task 2 - Design and Develop the Code
